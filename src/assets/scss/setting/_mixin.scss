@@ -7,8 +7,8 @@
 
 // 한 줄 효과
 @mixin line-one {
+    white-space: nowrap;
     overflow: hidden;
-    white-space: none;
     text-overflow: ellipsis;
 }
 
