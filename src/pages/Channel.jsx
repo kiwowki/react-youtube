@@ -53,7 +53,6 @@ const Channel = () => {
                         </div>
                     </div>
                     <div className='channel_video video_inner'>
-                        {/* 동영상 목록을 표시하는 부분 */}
                         <h2>동영상 목록</h2>
                         <ul>
                             {channelVideos && channelVideos.map((video) => (
