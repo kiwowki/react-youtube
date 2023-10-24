@@ -26,11 +26,11 @@ export const keywordText = [
     {
         title: "Beatles",
         icon: <TbHandRock />,
-        src: "/search/UCc4K7bAqpdBP8jh1j9XZAww"
+        src: "/search/Beatles"
     },{
         title: "Led Zeppelin",
         icon: <TbHandRock />,
-        src: "/search/UCaKZA66vM_TUpetUNohmR0A"
+        src: "/search/Led Zeppelin"
     },{
         title: "Pink Floyd",
         icon: <TbHandRock />,

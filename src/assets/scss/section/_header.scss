@@ -108,13 +108,16 @@
     }
 
     .keyword {
+        width: 100%;
         font-family: var(--mapo);
         li {
+            width: 100%;
             border-bottom: 1px dashed var(--yellow100);
             padding: 10px 10px;
             margin-top: 10px;
 
             a {
+                width: 100%;
                 position: relative;
 
                 svg {
@@ -125,8 +128,6 @@
                     top: 0.3rem;
                 }
                 
-
-                width: 80%;
                 padding: 5px 25px;
 
             }
@@ -134,7 +135,7 @@
             
         }
         li:hover {
-
+            
             background-color: var(--yellow);
             color: var(--black);
             border-radius: 20px;
