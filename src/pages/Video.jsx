@@ -13,7 +13,7 @@ const Video = () => {
                 setVideoDetail(data.items[0]);
                 console.log(data);
             });
-    }, [videoId]);
+    }, [videoId]); 
 
     return (
         <section id='videoViewPage'>
