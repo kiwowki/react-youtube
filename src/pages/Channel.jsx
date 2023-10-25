@@ -1,17 +1,24 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { fetchFromAPI } from '../utils/api';
+import VideoSearch from '../components/video/VideoSearch';
 
 const Channel = () => {
     const { channelId } = useParams();
-    const [channelDetail, setChannelDetail] = useState();
-    const [channelVideos, setChannelVideos] = useState([]);
+    const [ channelDetail, setChannelDetail ] = useState(); // 데이터가 하나라 배열 표시x
+    const [ channelVideo, setChannelVideo ] = useState([]);
+    const [ channelVideos, setChannelVideos ] = useState([]);
 
     useEffect(() => {
         const fetchChannelData = async () => {
             try {
                 const data = await fetchFromAPI(`channels?part=snippet,id,statistics,brandingSettings&id=${channelId}`);
                 setChannelDetail(data.items[0]);
+
+                const videosData = await fetchFromAPI(`search?channelId=${channelId}&part=snippet&order=date&type=video`);
+                setChannelVideo(videosData.items);
+
+                // console.log(data.items);  확인하기
             } catch (error) {
                 console.error("Error fetching channel data", error);
             }
@@ -62,6 +69,9 @@ const Channel = () => {
                                 </li>
                             ))}
                         </ul>
+                    </div>
+                    <div className="channel_video video_inner">
+                        <VideoSearch videos={channelVideo}/>
                     </div>
                     <div className='channel_more'></div>
                 </div>
