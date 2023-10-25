@@ -42,7 +42,7 @@ export const keywordText = [
     },{
         title: "AC/DC",
         icon: <TbHandRock />,
-        src: "/search/AC/DC"
+        src: "/search/AC%2FDC"
     },{
         title: "Rolling Stones",
         icon: <TbHandRock />,
