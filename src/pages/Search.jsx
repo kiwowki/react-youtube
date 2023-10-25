@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
+
 import { fetchFromAPI } from '../utils/api';
 import VideoSearch from '../components/video/VideoSearch';
 

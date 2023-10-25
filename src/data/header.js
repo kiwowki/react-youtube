@@ -34,51 +34,51 @@ export const keywordText = [
     },{
         title: "Pink Floyd",
         icon: <TbHandRock />,
-        src: "/search/UCY2qt3dw2TQJxvBrDiYGHdQ"
+        src: "/search/Pink Floyd"
     },{
         title: "Queen",
         icon: <TbHandRock />,
-        src: "/search/UCiMhD4jzUqG-IgPzUmmytRQ"
+        src: "/search/Queen"
     },{
         title: "AC/DC",
         icon: <TbHandRock />,
-        src: "/search/UCB0JSO6d5ysH2Mmqz5I9rIw"
+        src: "/search/AC/DC"
     },{
         title: "Rolling Stones",
         icon: <TbHandRock />,
-        src: "/search/UCB_Z6rBg3WW3NL4-QimhC2A"
+        src: "/search/Rolling Stones"
     },{
         title: "Eagles",
         icon: <TbHandRock />,
-        src: "/search/UCPTypnDNlOZVnD7MY30_YBw"
+        src: "/search/Eagles"
     },{
         title: "U2",
         icon: <TbHandRock />,
-        src: "/search/UC4gPNusMDwx2Xm-YI35AkCA"
+        src: "/search/U2"
     },{
         title: "Aerosmith",
         icon: <TbHandRock />,
-        src: "/search/UCBxdHQVOaZhUOIj_3gt2FYw"
+        src: "/search/Aerosmith"
     },{
         title: "Metallica",
         icon: <TbHandRock />,
-        src: "/search/UCbulh9WdLtEXiooRcYK7SWw"
+        src: "/search/Metallica"
     },{
         title: "Oasis",
         icon: <TbHandRock />,
-        src: "/search/UCUDVBtnOQi4c7E8jebpjc9Q"
+        src: "/search/Oasis"
     },{
         title: "Coldplay",
         icon: <TbHandRock />,
-        src: "/search/UCDPM_n1atn2ijUwHd0NNRQw"
+        src: "/search/Coldplay"
     },{
         title: "Muse",
         icon: <TbHandRock />,
-        src: "/search/UCGGhM6XCSJFQ6DTRffnKRIw"
+        src: "/search/Muse"
     },{
         title: "Radiohead",
         icon: <TbHandRock />,
-        src: "/search/UCq19-LqvG35A-30oyAiPiqA"
+        src: "/search/Radiohead"
     }
 ]
 

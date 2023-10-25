@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { fetchFromAPI } from '../utils/api';
+
 import VideoSearch from '../components/video/VideoSearch';
 
 const Channel = () => {
@@ -16,9 +17,9 @@ const Channel = () => {
                 setChannelDetail(data.items[0]);
 
                 const videosData = await fetchFromAPI(`search?channelId=${channelId}&part=snippet&order=date&type=video`);
+                console.log(videosData);  //확인하기
                 setChannelVideo(videosData.items);
 
-                // console.log(data.items);  확인하기
             } catch (error) {
                 console.error("Error fetching channel data", error);
             }
@@ -58,17 +59,6 @@ const Channel = () => {
                             <span><p>동영상 개수</p>: {channelDetail.statistics.videoCount} 개</span>
                             <span><p>총 조회수</p>: {channelDetail.statistics.viewCount} 회</span>
                         </div>
-                    </div>
-                    <div className='channel_video video_inner'>
-                        <h2>동영상 목록</h2>
-                        <ul>
-                            {channelVideos && channelVideos.map((video) => (
-                                <li key={video.id.videoId}>
-                                    <img src={video.snippet.thumbnails.default.url} alt={video.snippet.title} />
-                                    <p>{video.snippet.title}</p>
-                                </li>
-                            ))}
-                        </ul>
                     </div>
                     <div className="channel_video video_inner">
                         <VideoSearch videos={channelVideo}/>

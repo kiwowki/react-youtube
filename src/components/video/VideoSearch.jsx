@@ -9,7 +9,7 @@ const formatDate = (dateString) => {
     return `${year}-${month}-${day}`;
 }
 
-const VideoSearch = ( {videos} ) => {
+const VideoSearch = ({ videos }) => {
     return (
         <>
             {videos.map((video, key) => (
